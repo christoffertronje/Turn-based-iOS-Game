@@ -53,7 +53,6 @@ class LoginScreen: UIViewController, UITextFieldDelegate  {
                 "username": usernameTextField.text!,
                 "password": passwordTextField.text!
             ]
-            print("LOGGED IN MOTHERFUCEKRS")
             self.sendRequest(message: dic)
         }
         else{
@@ -73,8 +72,6 @@ class LoginScreen: UIViewController, UITextFieldDelegate  {
                 chessBrain.username = self.username
                 destination.chessBrain = chessBrain
             }
-            
-            
         }
     }
     

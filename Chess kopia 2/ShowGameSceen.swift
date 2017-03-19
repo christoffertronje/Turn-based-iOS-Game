@@ -38,7 +38,6 @@ class ShowGameSceen: UIViewController{
     var timer: Timer?
     var currentPositions = ""
     var gameOver = false
-    
     var passedData: Dictionary<String,Any> = [String:Any]()
     
     
@@ -200,9 +199,6 @@ class ShowGameSceen: UIViewController{
 
                     
                 }else if response == "MoveMade" {     // move made
-                    /* DispatchQueue.main.async {
-                     self.UIButtons[self.buttonToBeChanged].setImage(UIImage(named: self.player["picture"]!),for: UIControlState())
-                     }*/
                     
                     self.moveMade = true
                     let sqlarray = (dic["sql"] as! Array<Dictionary<String,Any>>)[0]
